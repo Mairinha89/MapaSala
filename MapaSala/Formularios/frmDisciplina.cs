@@ -61,6 +61,10 @@ namespace MapaSala.Formularios
         private void dtGridDisciplina_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             LinhaSelecionada = e.RowIndex;
+            txtNomeDisciplina.Text = dtGridDisciplina.Rows[LinhaSelecionada].Cells[1].Value.ToString();
+            txtSigla.Text = dtGridDisciplina.Rows[LinhaSelecionada].Cells[2].Value.ToString();
+            numId.Value = Convert.ToInt32(dtGridDisciplina.Rows[LinhaSelecionada].Cells[0].Value.ToString());
+
             //MessageBox.Show("Novo Valor: " + LinhaSelecionada);
         }
 
@@ -72,6 +76,20 @@ namespace MapaSala.Formularios
         private void frmDisciplina_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+        private void btnEditar_Click_1(object sender, EventArgs e)
+        {
+            DataGridViewRow Editar = dtGridDisciplina.Rows[LinhaSelecionada];
+            Editar.Cells[0].Value = numId.Value;
+            Editar.Cells[1].Value = txtNomeDisciplina.Text;
+            Editar.Cells[2].Value = txtSigla.Text;
         }
     }
 }
