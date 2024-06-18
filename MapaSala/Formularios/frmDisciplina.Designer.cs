@@ -107,6 +107,7 @@ namespace MapaSala.Formularios
             this.dtGridDisciplina.AllowUserToAddRows = false;
             this.dtGridDisciplina.AllowUserToDeleteRows = false;
             this.dtGridDisciplina.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtGridDisciplina.BackgroundColor = System.Drawing.Color.Pink;
             this.dtGridDisciplina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGridDisciplina.Location = new System.Drawing.Point(12, 65);
             this.dtGridDisciplina.Name = "dtGridDisciplina";

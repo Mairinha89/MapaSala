@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace Model.Entitidades
 {
-    public class UsuariosEntidade
+    public class CursosEntidade
     {
         public int Id { get; set; }
-        public string Login { get; set; }
-        public string Senha { get; set; }
         public string Nome { get; set; }
+        public string Turno { get; set; }
         public bool Ativo { get; set; }
+        public object[] Linha()
+        {
+            return new object[] { Id, Nome, Turno, Ativo};
+        }
     }
 }

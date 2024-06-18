@@ -73,15 +73,7 @@ namespace MapaSala.Formularios
             dtGridDisciplina.Rows.RemoveAt(LinhaSelecionada);
         }
 
-        private void frmDisciplina_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
        
         private void btnEditar_Click_1(object sender, EventArgs e)
@@ -90,6 +82,11 @@ namespace MapaSala.Formularios
             Editar.Cells[0].Value = numId.Value;
             Editar.Cells[1].Value = txtNomeDisciplina.Text;
             Editar.Cells[2].Value = txtSigla.Text;
+        }
+
+        private void frmDisciplina_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
